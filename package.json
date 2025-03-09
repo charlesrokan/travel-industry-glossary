@@ -2,9 +2,9 @@
   "name": "travel-glossary-app",
   "version": "1.0.0",
   "description": "Detailed Travel Glossary",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.html"
   },
   "dependencies": {
     "express": "^4.17.1"
