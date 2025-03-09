@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-font-size="medium">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Industry Glossary</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"></noscript>
+    
+    <!-- Meta tags for SEO and sharing -->
+    <meta name="description" content="A comprehensive glossary of travel industry terms, acronyms, and concepts for corporate travel professionals.">
+    <meta name="keywords" content="travel industry, glossary, TMC, corporate travel, business travel, travel terms">
+    <meta property="og:title" content="Travel Industry Glossary">
+    <meta property="og:description" content="A comprehensive reference of terms, acronyms, and concepts in the corporate travel ecosystem.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Travel Industry Glossary">
+    <meta name="twitter:description" content="A comprehensive reference of terms, acronyms, and concepts in the corporate travel ecosystem.">
+    
+    <!-- PWA support -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2c5282">
+    <link rel="apple-touch-icon" href="images/icon-192x192.png">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header>
+        <div class="container">
+            <h1>Travel Industry Glossary</h1>
+            <p>Industry keywords and definitions that are important to know</p>
+            <button class="settings-toggle" id="settings-toggle" aria-label="Open settings">
+                <i class="fas fa-cog"></i>
+            </button>
+        </div>
+    </header>
+    
+    <div class="container" id="main-content">
+        <div class="controls-section">
+            <div class="controls-row">
+                <div class="search-container">
+                    <span class="search-icon" aria-hidden="true">🔍</span>
+                    <input type="text" id="search-input" placeholder="Search terms, acronyms, or definitions..." aria-label="Search terms">
+                </div>
+                
+                <div class="random-btn-container">
+                    <button class="random-btn" id="random-term-btn" aria-label="Show random term">
+                        <span>Random Term</span> 
+                        <span aria-hidden="true">🎲</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="filter-container" aria-label="Filter by category">
+                <button class="filter-btn active" data-category="all">All Categories</button>
+                <button class="filter-btn" data-category="Finance">Finance</button>
+                <button class="filter-btn" data-category="Travel Management">Travel Management</button>
+                <button class="filter-btn" data-category="Booking">Booking</button>
+                <button class="filter-btn" data-category="Air Travel">Air Travel</button>
+                <button class="filter-btn" data-category="Technology">Technology</button>
+            </div>
+            
+            <div class="alphabet-nav" id="alphabet-nav" aria-label="Filter by first letter">
+                <button class="letter-btn active" data-letter="all">All</button>
+                <button class="letter-btn" data-letter="A">A</button>
+                <button class="letter-btn" data-letter="B">B</button>
+                <button class="letter-btn" data-letter="C">C</button>
+                <button class="letter-btn" data-letter="D">D</button>
+                <button class="letter-btn" data-letter="E">E</button>
+                <button class="letter-btn" data-letter="F">F</button>
+                <button class="letter-btn" data-letter="G">G</button>
+                <button class="letter-btn" data-letter="H">H</button>
+                <button class="letter-btn" data-letter="I">I</button>
+                <button class="letter-btn" data-letter="J">J</button>
+                <button class="letter-btn" data-letter="K">K</button>
+                <button class="letter-btn" data-letter="L">L</button>
+                <button class="letter-btn" data-letter="M">M</button>
+                <button class="letter-btn" data-letter="N">N</button>
+                <button class="letter-btn" data-letter="O">O</button>
+                <button class="letter-btn" data-letter="P">P</button>
+                <button class="letter-btn" data-letter="Q">Q</button>
+                <button class="letter-btn" data-letter="R">R</button>
+                <button class="letter-btn" data-letter="S">S</button>
+                <button class="letter-btn" data-letter="T">T</button>
+                <button class="letter-btn" data-letter="U">U</button>
+                <button class="letter-btn" data-letter="V">V</button>
+                <button class="letter-btn" data-letter="W">W</button>
+                <button class="letter-btn" data-letter="X">X</button>
+                <button class="letter-btn" data-letter="Y">Y</button>
+                <button class="letter-btn" data-letter="Z">Z</button>
+            </div>
+        </div>
+        
+        <div class="favorites-container" id="favorites-section">
+            <h3>
+                <span aria-hidden="true">⭐</span>
+                Your Favorites
+            </h3>
+            <div class="favorites-list" id="favorites-list">
+                <!-- Favorites will be populated here by JavaScript -->
+                <p id="no-favorites-message">You haven't added any favorites yet.</p>
+            </div>
+        </div>
+        
+        <div class="history-container" id="history-section">
+            <h3>
+                <span aria-hidden="true">⏱️</span>
+                Recently Viewed
+            </h3>
+            <ul class="history-list" id="history-list">
+                <!-- History will be populated here by JavaScript -->
+                <li id="no-history-message">No recently viewed terms.</li>
+            </ul>
+        </div>
+        
+        <div class="statistics">
+            <div class="stat-card">
+                <div class="stat-value">150+</div>
+                <div class="stat-label">Total Terms</div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-value">8</div>
+                <div class="stat-label">Categories</div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-value">300+</div>
+                <div class="stat-label">Examples & Use Cases</div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-value">2025</div>
+                <div class="stat-label">Last Updated</div>
+            </div>
+        </div>
+        
+        <div class="glossary-content" id="glossary-content">
+            <!-- Glossary content will be populated here by JavaScript -->
+        </div>
+    </div>
+    
+    <!-- Settings Panel -->
+    <div class="settings-panel" id="settings-panel">
+        <button class="settings-close" id="settings-close" aria-label="Close settings">×</button>
+        <h2 class="settings-header">Settings</h2>
+        
+        <div class="settings-section">
+            <h3>Display Options</h3>
+            <div class="setting-item">
+                <label for="font-size">Font Size</label>
+                <div class="select-wrapper">
+                    <select id="font-size">
+                        <option value="small">Small</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="setting-item">
+                <label for="theme">Theme</label>
+                <div class="select-wrapper">
+                    <select id="theme">
+                        <option value="light" selected>Light</option>
+                        <option value="dark">Dark</option>
+                        <option value="auto">System Default</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+        <div class="settings-section">
+            <h3>Content Preferences</h3>
+            <div class="setting-item">
+                <label for="show-pronunciation">Show Pronunciation Guides</label>
+                <label class="switch">
+                    <input type="checkbox" id="show-pronunciation" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+            
+            <div class="setting-item">
+                <label for="show-examples">Show Examples</label>
+                <label class="switch">
+                    <input type="checkbox" id="show-examples" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+            
+            <div class="setting-item">
+                <label for="show-related">Show Related Terms</label>
+                <label class="switch">
+                    <input type="checkbox" id="show-related" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+        
+        <div class="settings-section">
+            <h3>Export & Print</h3>
+            <div class="setting-item">
+                <button class="print-btn" id="print-btn">
+                    <i class="fas fa-print"></i>
+                    Print Glossary
+                </button>
+                
+                <div class="export-options">
+                    <button class="export-btn" data-format="pdf">PDF</button>
+                    <button class="export-btn" data-format="csv">CSV</button>
+                    <button class="export-btn" data-format="json">JSON</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Back to top button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <span aria-hidden="true">↑</span>
+    </button>
+    
+    <!-- Notification -->
+    <div class="notification" id="notification">Term added to favorites!</div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About the Glossary</h3>
+                    <p>This glossary contains terms, acronyms, and concepts used in the corporate travel industry. It is designed as a reference for travel professionals, corporate travel managers, and anyone involved in business travel.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Useful Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contribute</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Related Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://atpco.net/glossary/" target="_blank" rel="noopener">ATPCO Glossary</a></li>
+                        <li><a href="https://www.iata.org/en/publications/glossary/" target="_blank" rel="noopener">IATA Glossary</a></li>
+                        <li><a href="#" target="_blank" rel="noopener">Corporate Travel Management Guide</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Travel Industry Glossary. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script imports -->
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/settings.js"></script>
+    <script>
+        // Register service worker for offline functionality
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/service-worker.js').then(function() {
+                    console.log('ServiceWorker registration successful');
+                }).catch(function(err) {
+                    console.error('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+    </script>
+</body>
+</html>

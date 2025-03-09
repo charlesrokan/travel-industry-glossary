@@ -1,0 +1,41 @@
+{
+  "terms": [
+    {
+      "term": "Account management",
+      "category": "Travel Management",
+      "definition": "Services offered by TMC to for managed travel. Depending on size of the account, the services offered by the account manager will vary. Responsible for overall account retention and relationship.",
+      "examples": [
+        "Adoption advisement for online programs",
+        "Strategic sourcing management and advisement",
+        "Quarterly reviews on program performance",
+        "Unused ticket management review"
+      ],
+      "relatedTerms": ["TMC", "SLA", "KPI"]
+    },
+    {
+      "term": "ATPCO",
+      "category": "Air Travel",
+      "definition": "A corporation that publishes the latest airfares for more than 500 airlines multiple times per day. Based at Washington Dulles International Airport outside of Washington, D.C., ATPCO also has offices in Miami, Florida; London, UK; and Singapore. ATPCO is owned by a number of US and international airlines.",
+      "pronunciation": "ay-tee-pee-see-oh",
+      "relatedTerms": ["GDS", "Fare Filing", "CRS"]
+    },
+    {
+      "term": "GDS",
+      "category": "Technology",
+      "definition": "Global Distribution System. Computerized network system that enables transactions between travel service providers and travel agencies. Major GDS providers include Sabre, Amadeus, and Travelport.",
+      "examples": [
+        "Sabre (1S)",
+        "Travelport (Apollo (1V), WorldSpan (1P), Galileo (1G))",
+        "Amadeus (1A)"
+      ],
+      "relatedTerms": ["CRS", "TMC", "Booking"]
+    },
+    {
+      "term": "TMC",
+      "category": "Travel Management",
+      "definition": "Travel Management Company. A business travel agency that helps organizations manage their travel programs. A TMC fulfills travel bookings, supports the organization's duty of care obligations, and identifies potential cost-savings opportunities.",
+      "pronunciation": "tee-em-see",
+      "relatedTerms": ["Corporate Travel", "Managed Travel", "Business Travel"]
+    }
+  ]
+}
