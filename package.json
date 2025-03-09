@@ -1,5 +1,15 @@
-"homepage": "https://yourusername.github.io/repository-name",
-"scripts": {
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
+{
+  "name": "Travel Glossary App",
+  "version": "1.0.0",
+  "description": "Detailed Travel Glossary",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "engines": {
+    "node": "14.x"
+  }
 }
